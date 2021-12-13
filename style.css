@@ -140,4 +140,8 @@ section {
 }
 .link {
   color: grey;
+  text-decoration: underline;
+}
+.link:hover {
+  color: rgb(58, 57, 57);
 }

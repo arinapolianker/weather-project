@@ -31,9 +31,9 @@ function getCurrentLocation(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
   axios.get(apiUrl).then(showTemp);
 }
-getCurrentLocation(position);
+
 // search city //
-let form = document.querySelector("#form");
+let search = document.querySelector(".sub");
 function currentCity(event) {
   event.preventDefault();
   let searchCity = document.querySelector("#search");
@@ -42,7 +42,7 @@ function currentCity(event) {
   h3.innerHTML = `${searchCity.value}`;
   axios.get(apiUrlCity).then(showTemp);
 }
-form.addEventListener("submit", currentCity);
+search.addEventListener("click", currentCity);
 // temp functions //
 function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
@@ -56,6 +56,7 @@ function showTemp(response) {
     event.preventDefault();
     let butC = temp;
     deg.innerHTML = `${butC}°C`;
+    feels.innerHTML = `${feelslike}°C`;
   }
   function degF(event) {
     event.preventDefault();
