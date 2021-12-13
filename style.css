@@ -1,0 +1,140 @@
+.container {
+  background: linear-gradient(
+    179deg,
+    rgb(110, 144, 242) 3.3%,
+    rgb(245, 193, 193) 100%
+  );
+  display: block;
+  margin: 30px auto;
+  background-repeat: no-repeat;
+  border: black;
+  border-style: solid;
+  border-radius: 20px;
+}
+#form {
+  text-align: center;
+  padding: 3px;
+}
+#search {
+  padding: 0 100px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: rgb(168, 168, 248);
+  text-align: center;
+}
+.sub {
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: rgb(132, 132, 202);
+  color: white;
+}
+.current {
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: rgb(132, 132, 202);
+  color: white;
+}
+.butF {
+  position: absolute;
+  font-size: 10px;
+  margin: 30px 10px;
+  padding: 0 7px;
+  background: rgb(132, 132, 202);
+  border: solid 1px white;
+  border-radius: 20px;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+.butF:hover {
+  background-color: rgb(167, 167, 235);
+  cursor: pointer;
+}
+.butC {
+  position: absolute;
+  font-size: 10px;
+  margin: 15px 10px;
+  padding: 0 6.5px;
+  background: rgb(132, 132, 202);
+  border: solid 1px white;
+  border-radius: 20px;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+.butC:hover {
+  background-color: rgb(167, 167, 235);
+  cursor: pointer;
+}
+
+section h1 {
+  font-size: 50px;
+}
+section h2 {
+  font-size: 70px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-family: "Genos", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+section h3 {
+  text-transform: capitalize;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Genos", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+section h4 {
+  font-size: 10px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Genos", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+section h5 {
+  opacity: 50px;
+  font-size: 10px;
+}
+section {
+  text-align: center;
+}
+.main {
+  margin: 40px;
+}
+#sunRS {
+  margin: 10px 90px;
+}
+.row {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Genos", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+
+.row p {
+  margin-top: 20px;
+  font-size: 10px;
+  margin-bottom: -10px;
+}
+.created {
+  color: grey;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: -30px;
+  margin-top: 10px;
+  font-size: 12px;
+}

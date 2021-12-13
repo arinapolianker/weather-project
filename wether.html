@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌈Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Corinthia&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link href="weather.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&family=Corinthia&family=Cuprum&family=Dosis&family=Genos:wght@300&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Varela+Round&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/14932208d6.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <form id="form">
+      <input type="text" placeholder="Enter city" autocomplete="off" id="search"/> 
+      <button class="sub"><i class="fas fa-search-location"></i></button> 
+      <button class="current"><i class="far fa-compass"></i></button>
+    </form>
+    <section class="main">
+      <h1>☁️</h1>
+      <h2><span id="deg">0°</span><button class="butC">°C</button><button class="butF">°F</button></h2>
+      <h3>New York</h3>
+      <h5>now</h5>
+      <h4>Partly Cloudy</h4></span>
+      <br />
+      <div class="row" id="sunRS"> 
+        <div class="col-6">
+      <p>SUNRISE <i class="far fa-sun"></i> <br/>07:00</p></div>
+      <div class="col-6">
+      <p>SUNSET<i class="far fa-moon"></i><br/>17:00</p></div></div>
+      <div class="row">
+        <div class="col-4">
+          <p class="w">WIND<i class="fas fa-wind"></i><br /><span id="w">8km/h</span></p>
+        </div>
+        <div class="col-4">
+          <p class="h">HUMIDITY<i class="fas fa-tint"></i><br /><span id="h">50%</span></p>
+        </div>
+        <div class="col-4">
+          <p class="f">FEELS LIKE <i class="fas fa-temperature-low"></i><br /><span id="f">3°</span></p>
+        </div>
+      </div>
+    
+    <hr />
+    <div class="row">
+      <div class="col-2">
+        <span class="t"
+          >☁️<br /><strong>7°C</strong> <br />
+          Today</span
+        >
+			</div>
+      <div class="col-2">
+        <span class="wed"
+          >⛅️<br /><strong>9°C</strong><br />
+          Wed</span
+        >
+      </div>
+      <div class="col-2">
+        <span class="thu"
+          >⛅️<br /><strong>10°C</strong><br />
+          Thu</span
+        >
+      </div>
+      <div class="col-2">
+        <span class="fri"
+          >🌧<br /><strong>8°C</strong><br />
+          Fri</span
+        >
+      </div>
+      <div class="col-2">
+        <span class="sat"
+          >☁️<br /><strong>6°C</strong><br />
+          Sat</span
+        >
+      </div>
+      <div class="col-2">
+        <span class="sun"
+          >☁️<br /><strong>5°C</strong><br />
+          Sun</span>
+        
+      </div>
+    </div>
+    <div class="created">Created by Arina Polianker</div>
+  </body>
+</html>
