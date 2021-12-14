@@ -11,7 +11,7 @@ if (min < 10) {
 let days = [
   "Sunday",
   "Monday",
-  "Teausday",
+  "Tuesday",
   "Wednsday",
   "Thursday",
   "Friday",
@@ -20,6 +20,7 @@ let days = [
 let day = days[now.getDay()];
 let currentTime = document.querySelector("h5");
 currentTime.innerHTML = `${day} ${hour}:${min}`;
+
 // Open page with current info //
 let apiKey = "089de42863cffcedc265abdd75619b42";
 navigator.geolocation.getCurrentPosition(getCurrentLocation);
@@ -48,7 +49,6 @@ function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
   let deg = document.querySelector("#deg");
   deg.innerHTML = `${temp}°C`;
-  console.log(temp);
   let feels = document.querySelector("#f");
   let feelslike = Math.round(response.data.main.feels_like);
   feels.innerHTML = `${feelslike}°C`;
@@ -57,6 +57,7 @@ function showTemp(response) {
     let butC = temp;
     deg.innerHTML = `${butC}°C`;
     feels.innerHTML = `${feelslike}°C`;
+    windspeed.innerHTML = `${wind} km/h`;
   }
   function degF(event) {
     event.preventDefault();
@@ -65,6 +66,8 @@ function showTemp(response) {
     let feels = document.querySelector("#f");
     let feelsDegF = Math.round((feelslike * 9) / 5 + 32);
     feels.innerHTML = `${feelsDegF}°F`;
+    let mWind = Math.round(wind * 0.62137);
+    windspeed.innerHTML = `${mWind} mp/h`;
   }
   let butc = document.querySelector(".butC");
   let butf = document.querySelector(".butF");
@@ -83,9 +86,16 @@ function showTemp(response) {
   let hum = document.querySelector("#h");
   hum.innerHTML = `${humidity}%`;
 
-  let weatherKind = response.data.weather[0].main;
+  let weatherKind = response.data.weather[0].description;
   let h4 = document.querySelector("h4");
   h4.innerHTML = weatherKind;
+  console.log(response.data.weather[0].icon);
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    ` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 // current location + temp //

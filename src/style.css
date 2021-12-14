@@ -11,6 +11,11 @@
   border-style: solid;
   border-radius: 20px;
 }
+.width {
+  max-width: 600px;
+  display: block;
+  margin: 30px auto;
+}
 #form {
   text-align: center;
   padding: 3px;
@@ -65,8 +70,10 @@
   cursor: pointer;
 }
 
-section h1 {
-  font-size: 50px;
+#icon {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
 }
 section h2 {
   font-size: 70px;
@@ -91,6 +98,7 @@ section h3 {
   font-family: "Varela Round", sans-serif;
 }
 section h4 {
+  text-transform: capitalize;
   font-size: 10px;
   font-family: "Balsamiq Sans", cursive;
   font-family: "Bebas Neue", cursive;
@@ -135,13 +143,14 @@ section {
   color: grey;
   font-family: "Courier New", Courier, monospace;
   margin-bottom: -30px;
-  margin-top: 10px;
+  margin-top: 0;
   font-size: 12px;
+  text-align: center;
 }
 .link {
   color: grey;
   text-decoration: underline;
 }
 .link:hover {
-  color: rgb(58, 57, 57);
+  color: rgb(49, 49, 49);
 }
