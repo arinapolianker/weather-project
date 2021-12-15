@@ -138,6 +138,9 @@ section {
   font-size: 10px;
   margin-bottom: -10px;
 }
+.forecast {
+  text-align: center;
+}
 .created {
   color: grey;
   font-family: "Courier New", Courier, monospace;
