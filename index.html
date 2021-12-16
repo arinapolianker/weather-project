@@ -10,31 +10,37 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous" />
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Corinthia&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&family=Corinthia&family=Cuprum&family=Dosis&family=Genos:wght@300&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Varela+Round&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/14932208d6.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&family=Corinthia&family=Cuprum&family=Dosis&family=Genos:wght@300&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/14932208d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="" href="icons.html">
   </head>
   <body><div class= "width">
-    <div class="container">
-     
+    <div class="container" id="container" style="background: linear-gradient(
+    46deg,
+    rgba(45, 130, 241, 1) 3.3%,
+    rgba(181, 221, 247, 1) 100%)" >
     <form id="form">
-      <input type="text" placeholder="Enter city" autocomplete="off" id="search"/> 
+      <input type="text" placeholder="Enter city..." autocomplete="off" id="search"/> 
       <button class="sub"><i class="fas fa-search-location"></i></button> 
-      <button class="current"><i class="far fa-compass"></i></button>
+      <button class="current"><i class="fas fa-map-marker-alt"></i></button>
     </form>
     <section class="main">
       <div ><img id="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="100px"></div>
@@ -44,52 +50,111 @@
       <h4>-</h4></span>
       <br />
       <div class="row" id="sunRS"> 
+        
         <div class="col-6">
-      <p>SUNRISE <i class="far fa-sun"></i> <br/><span id="sunrise">-</span></p></div>
-      <div class="col-6">
-      <p>SUNSET<i class="far fa-moon"></i><br/><span id="sunset">-</span></p></div></div>
-      <div class="row">
-        <div class="col-4">
-          <p class="w">WIND<i class="fas fa-wind"></i><br /><span id="w">-km/h</span></p>
+          <p>
+            SUNRISE <i class="far fa-sun"></i> <br /><span id="sunrise">-</span>
+          </p>
         </div>
-        <div class="col-4">
-          <p class="h">HUMIDITY<i class="fas fa-tint"></i><br /><span id="h">-</span></p>
-        </div>
-        <div class="col-4">
-          <p class="f">FEELS LIKE <i class="fas fa-temperature-low"></i><br /><span id="f">-</span></p>
+        <div class="col-6">
+          <p>
+            SUNSET<i class="far fa-moon"></i><br /><span id="sunset">-</span>
+          </p>
         </div>
       </div>
-    
-    <hr />
-    <div class="forecast">
-    <div class="row">
-      <div class="col-2">
-         <img class="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="60px"><div class="forecast-temp"><strong>-</strong></div>
-          <div class="forecast-day">Thu</div>
-			</div>
-      <div class="col-2">
-        <img class="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="60px"><div class="forecast-temp"><strong>-</strong></div>
-          <div class="forecast-day">Thu</div>
+      <div class="row" id="WHF">
+        <div class="col-4">
+          <p class="w">
+            WIND<i class="fas fa-wind"></i><br /><span id="w">-km/h</span>
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="h">
+            HUMIDITY<i class="fas fa-tint"></i><br /><span id="h">-</span>
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="f">
+            FEELS LIKE <i class="fas fa-temperature-low"></i><br /><span id="f"
+              >-</span
+            >
+          </p>
+        </div>
       </div>
-      <div class="col-2">
-          <img class="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="60px"><div class="forecast-temp"><strong>-</strong></div>
-          <div class="forecast-day">Thu</div>
+
+      <hr />
+      <div class="forecast">
+        <div class="row">
+          <div class="col-2">
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="cloudy"
+              width="60px"
+            />
+            <div class="forecast-temp"><strong>-</strong></div>
+            <div class="forecast-day">Thu</div>
+          </div>
+          <div class="col-2">
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="cloudy"
+              width="60px"
+            />
+            <div class="forecast-temp"><strong>-</strong></div>
+            <div class="forecast-day">Thu</div>
+          </div>
+          <div class="col-2">
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="cloudy"
+              width="60px"
+            />
+            <div class="forecast-temp"><strong>-</strong></div>
+            <div class="forecast-day">Thu</div>
+          </div>
+          <div class="col-2">
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="cloudy"
+              width="60px"
+            />
+            <div class="forecast-temp"><strong>-</strong></div>
+            <div class="forecast-day">Thu</div>
+          </div>
+          <div class="col-2">
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="cloudy"
+              width="60px"
+            />
+            <div class="forecast-temp"><strong>-</strong></div>
+            <div class="forecast-day">Thu</div>
+          </div>
+          <div class="col-2">
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="cloudy"
+              width="60px"
+            />
+            <div class="forecast-temp"><strong>-</strong></div>
+            <div class="forecast-day">Thu</div>
+          </div>
+        </div>
       </div>
-      <div class="col-2">
-       <img class="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="60px"><div class="forecast-temp"><strong>-</strong></div>
-          <div class="forecast-day">Thu</div>
-      </div>
-      <div class="col-2">
-        <img class="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="60px"><div class="forecast-temp"><strong>-</strong></div>
-          <div class="forecast-day">Thu</div>
-      </div>
-      <div class="col-2">
-        <img class="icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="cloudy" width="60px"><div class="forecast-temp"><strong>-</strong></div>
-          <div class="forecast-day">Thu</div>
-      </div></div>
     </div>
-  </div>
-    <div class="created">Coded by <a href="https://github.com/arinapolianker/weather-project" class="link" >Arina Polianker</a></div>
+    
+    <div class="created">
+      Coded by <a href="https://www.linkedin.com/search/results/all/?keywords=arina%20polianker&origin=RICH_QUERY_SUGGESTION&position=0&searchId=62317f2f-ecf4-472e-9076-faf36d5274b9&sid=%3AEr" target="_blank" class="link" >Arina Polianker</a>, and open sourced on 
+      <a href="https://github.com/arinapolianker/weather-project" target="_blank" class="link"
+        >GitHub</a
+      >.
+    </div>
     <script src="src/weather.js"></script>
   </body>
 </html>

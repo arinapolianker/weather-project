@@ -1,15 +1,34 @@
 .container {
   background: linear-gradient(
-    179deg,
+    46deg,
     rgb(45, 130, 241) 3.3%,
     rgb(181, 221, 247) 100%
   );
+  background: linear-gradient(
+    179deg,
+    rgb(31, 58, 109) 3.3%,
+    rgb(53, 87, 150) 100%
+  );
+  background: linear-gradient(
+    179deg,
+    rgb(138, 179, 233) 3.3%,
+    rgb(255, 159, 121) 70%,
+    rgb(252, 220, 132) 100%
+  );
+  background: linear-gradient(
+    179deg,
+    rgb(13, 52, 104) 3.3%,
+    rgb(255, 146, 103) 70%,
+    rgb(255, 216, 109) 100%
+  );
+  color: white;
+
   display: block;
   margin: 30px auto;
   background-repeat: no-repeat;
   border: black;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .width {
   max-width: 600px;
@@ -23,21 +42,22 @@
 #search {
   padding: 0 100px;
   border-radius: 10px;
+
   border: 1px solid rgba(255, 255, 255, 0.788);
-  background: rgb(85, 154, 243);
+  background: rgb(206, 206, 206);
   text-align: center;
 }
 .sub {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.788);
-  background: rgb(68, 142, 240);
-  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(206, 206, 206);
+  color: rgb(65, 65, 65);
 }
 .current {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.788);
-  background: rgb(68, 142, 240);
-  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(206, 206, 206);
+  color: rgb(65, 65, 65);
   padding: 1px 7px;
 }
 .butF {
@@ -45,14 +65,14 @@
   font-size: 10px;
   margin: 30px 10px;
   padding: 0 7px;
-  background: rgb(68, 142, 240);
+  background: none;
   border: solid 1px white;
   border-radius: 20px;
   color: white;
   transition: all 200ms ease-in-out;
 }
 .butF:hover {
-  background-color: rgb(103, 161, 238);
+  background: rgb(124, 177, 207);
   cursor: pointer;
 }
 .butC {
@@ -60,14 +80,14 @@
   font-size: 10px;
   margin: 15px 10px;
   padding: 0 6.5px;
-  background: rgb(68, 142, 240);
+  background: none;
   border: solid 1px white;
   border-radius: 20px;
   color: white;
   transition: all 200ms ease-in-out;
 }
 .butC:hover {
-  background-color: rgb(103, 161, 238);
+  background-color: rgb(124, 177, 207);
   cursor: pointer;
 }
 
@@ -145,7 +165,7 @@ section {
 .created {
   color: grey;
   font-family: "Courier New", Courier, monospace;
-  margin-bottom: -30px;
+
   margin-top: 0;
   font-size: 12px;
   text-align: center;
