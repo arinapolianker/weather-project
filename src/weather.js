@@ -65,7 +65,6 @@ function currentCity(event) {
   event.preventDefault();
   let searchCity = document.querySelector("#search");
   let apiUrlCity = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&units=metric&appid=${apiKey}`;
-  let apiUrlForecastC = `https://api.openweathermap.org/data/2.5/onecall?q=${searchCity.value}&units=metric&appid=${apiKey}`;
   let h3 = document.querySelector("h3");
   h3.innerHTML = `${searchCity.value}`;
   axios.get(apiUrlCity).then(showTemp);

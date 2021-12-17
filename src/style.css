@@ -22,13 +22,16 @@
     rgb(255, 216, 109) 100%
   );
   color: white;
-
   display: block;
   margin: 30px auto;
   background-repeat: no-repeat;
   border: black;
   border-style: solid;
   border-radius: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
 }
 .width {
   max-width: 600px;
@@ -40,7 +43,7 @@
   padding: 5px;
 }
 #search {
-  padding: 0 50px;
+  padding: 0 40px;
   border-radius: 10px;
 
   border: 1px solid rgba(255, 255, 255, 0.788);
@@ -98,41 +101,32 @@
 section h2 {
   font-size: 70px;
   font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
   font-family: "Corinthia", cursive;
   font-family: "Cuprum", sans-serif;
-  font-family: "Genos", sans-serif;
-  font-family: "Indie Flower", cursive;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Varela Round", sans-serif;
 }
 section h3 {
   text-transform: capitalize;
+  font-size: 40px;
   font-family: "Balsamiq Sans", cursive;
   font-family: "Bebas Neue", cursive;
   font-family: "Corinthia", cursive;
   font-family: "Cuprum", sans-serif;
-  font-family: "Dosis", sans-serif;
-  font-family: "Genos", sans-serif;
-  font-family: "Indie Flower", cursive;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Varela Round", sans-serif;
 }
 section h4 {
   text-transform: capitalize;
-  font-size: 10px;
+  font-size: 18px;
+}
+section h5 {
+  opacity: 50px;
+  font-size: 15px;
   font-family: "Balsamiq Sans", cursive;
-  font-family: "Bebas Neue", cursive;
   font-family: "Corinthia", cursive;
   font-family: "Cuprum", sans-serif;
-  font-family: "Dosis", sans-serif;
   font-family: "Genos", sans-serif;
   font-family: "Indie Flower", cursive;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Varela Round", sans-serif;
-}
-section h5 {
-  opacity: 50px;
-  font-size: 10px;
 }
 section {
   text-align: center;
@@ -156,12 +150,31 @@ section {
 
 .row p {
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 13px;
   margin-bottom: -10px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
 }
 .forecast {
   text-align: center;
 }
+.forecast-day {
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-size: 20px;
+}
+.forecast-temp {
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-weight: 2px;
+}
+
 .created {
   color: grey;
   font-family: "Courier New", Courier, monospace;
