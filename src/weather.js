@@ -144,7 +144,7 @@ function showTemp(response) {
   let icon = document.querySelector("#icon");
   icon.setAttribute(
     "src",
-    ` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png
+    ` svg/${response.data.weather[0].icon}.svg
     `
   );
   icon.setAttribute("alt", response.data.weather[0].description);
@@ -173,9 +173,7 @@ function showForecast(response) {
         `<div class="col-2">
          <img 
          class="icon" 
-         src="http://openweathermap.org/img/wn/${
-           forecastDay.weather[0].icon
-         }@2x.png" 
+         src="svg/${forecastDay.weather[0].icon}.svg" 
          alt="cloudy" 
          width="60px">
          <div class="forecast-temp"><strong>${Math.round(
